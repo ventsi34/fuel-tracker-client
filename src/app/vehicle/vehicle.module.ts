@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { VehicleRoutingModule } from './vehicle-routing.module';
 import { VehicleComponent } from './vehicle.component';
+import { CreateComponent } from './create/create.component';
 
 
 @NgModule({
-  declarations: [VehicleComponent],
+  declarations: [VehicleComponent, CreateComponent],
   imports: [
     CommonModule,
     VehicleRoutingModule
