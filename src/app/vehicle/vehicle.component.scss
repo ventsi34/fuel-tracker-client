@@ -1,0 +1,29 @@
+.title-wrapper {
+  position: relative;
+  margin-bottom: 40px;
+  padding-top: 50px;
+
+  h2 {
+    margin: 0;
+    padding: 0 120px 0 0;
+  }
+
+  .add-btn {
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 0;
+  }
+}
+
+.mark {
+  width: 25%;
+}
+
+.model {
+  width: 25%;
+}
+
+.year {
+  width: 25%;
+}
