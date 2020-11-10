@@ -1,1 +1,31 @@
-<p>SHOW TRIPS OF VEHICLE WITH ID: {{ vehicleId }}!</p>
+<div class="wrapper title-wrapper">
+  <h2>VW Golf - trips list</h2>
+  <a routerLink="create" class="add-btn" mat-raised-button color="primary"><mat-icon>add</mat-icon> Add trip</a>
+</div>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 wrapper">
+  <ng-container matColumnDef="mark">
+    <th mat-header-cell *matHeaderCellDef>Mark</th>
+    <td class="mark" mat-cell *matCellDef="let element"> {{element.mark}} </td>
+  </ng-container>
+  <ng-container matColumnDef="model">
+    <th mat-header-cell *matHeaderCellDef>Model</th>
+    <td class="model" mat-cell *matCellDef="let element"> {{element.model}} </td>
+  </ng-container>
+  <ng-container matColumnDef="year">
+    <th mat-header-cell *matHeaderCellDef>Year</th>
+    <td class="year" mat-cell *matCellDef="let element"> {{element.year}} </td>
+  </ng-container>
+  <ng-container matColumnDef="actions">
+    <th class="text-center" mat-header-cell *matHeaderCellDef>Actions</th>
+    <td class="text-center" mat-cell *matCellDef="let element">
+        <a [routerLink]="[element._id, 'edit']" mat-icon-button color="accent" aria-label="Edit this vehicle">
+          <mat-icon>edit</mat-icon>
+        </a>
+        <button mat-icon-button color="accent" (click)="onDelete('delete')" aria-label="Delete this vehicle">
+          <mat-icon>delete</mat-icon>
+        </button>
+    </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
