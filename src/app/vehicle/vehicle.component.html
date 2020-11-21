@@ -18,7 +18,7 @@
   <ng-container matColumnDef="actions">
     <th class="text-center" mat-header-cell *matHeaderCellDef>Actions</th>
     <td class="text-center" mat-cell *matCellDef="let element">
-        <a [routerLink]="['/trips', element._id]" mat-icon-button color="accent" aria-label="Show trips of this vehicle">
+        <a [routerLink]="['/vehicles', element._id, 'trips']" mat-icon-button color="accent" aria-label="Show trips of this vehicle">
           <mat-icon>remove_red_eye</mat-icon>
         </a>
         <a [routerLink]="[element._id, 'edit']" mat-icon-button color="accent" aria-label="Edit this vehicle">

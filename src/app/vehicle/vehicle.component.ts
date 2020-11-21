@@ -29,5 +29,4 @@ export class VehicleComponent implements OnInit {
   onDelete(id: string): void {
     console.log(id);
   }
-
 }

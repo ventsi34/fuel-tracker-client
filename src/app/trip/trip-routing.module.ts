@@ -5,7 +5,7 @@ import { TripComponent } from './trip.component';
 import { CreateComponent } from './create/create.component';
 
 const routes: Routes = [
-  { path: ':vehicleId', component: TripComponent },
+  { path: '', component: TripComponent },
   { path: 'create', component: CreateComponent },
   { path: ':id/edit', component: CreateComponent },
 ];
