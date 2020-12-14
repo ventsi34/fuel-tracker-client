@@ -1,0 +1,15 @@
+@import "../../../variable";
+
+.card {
+  width: 300px;
+}
+
+.header {
+  color: $primary;
+  margin-bottom: 25px;
+}
+
+a {
+  display: inline-block;
+  padding-top: 15px;
+}

@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create.component.scss']
 })
 export class CreateComponent implements OnInit {
+  public years: number[] = [];
 
-  constructor() { }
+  constructor() {
+    let year: number = new Date().getFullYear();
+    const endYear: number = 1970;
 
-  ngOnInit(): void {
+    while(year >= endYear) {
+      this.years.push(year);
+      year--;
+    }
   }
+
+  ngOnInit(): void { }
 
 }

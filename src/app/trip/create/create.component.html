@@ -1,1 +1,51 @@
-<p>create works!</p>
+<div class="center-item">
+  <mat-card class="card">
+    <mat-card-header class="header">
+      <mat-card-title>Create new trip</mat-card-title>
+    </mat-card-header>
+    <form>
+      <mat-card-content>
+        <mat-form-field appearance="outline" class="w100">
+          <mat-label>Mileage</mat-label>
+          <input matInput type="number" placeholder="Mileage">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w100">
+          <mat-label>Fuel amount</mat-label>
+          <input matInput type="number" placeholder="Fuel amount">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w100">
+          <mat-label>Petrol station</mat-label>
+          <mat-select>
+            <mat-option value="omv">OMV</mat-option>
+            <mat-option value="petrol">Petrol</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="w100">
+          <mat-label>Drive place</mat-label>
+          <mat-radio-group
+            aria-labelledby="place">
+            <mat-radio-button value="city">City</mat-radio-button>
+            <mat-radio-button value="Highway">Highway</mat-radio-button>
+          </mat-radio-group>
+        </mat-form-field>
+
+
+
+        <!-- drivePlace: {
+        },
+        driveType: {
+        },
+        season: {
+        },
+        airConditionerStatus: {
+        },
+        isPremiumFuel: {
+        }, -->
+      </mat-card-content>
+      <mat-card-actions class="text-center">
+        <button mat-raised-button color="primary" class="w100">Add trip</button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>
