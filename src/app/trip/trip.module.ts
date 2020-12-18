@@ -8,6 +8,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { TripRoutingModule } from './trip-routing.module';
 import { TripComponent } from './trip.component';
@@ -27,6 +28,7 @@ import { DrivePlaceIconPipe } from './pipes/drive-place-icon.pipe';
     MatButtonModule,
     MatIconModule,
     MatFormFieldModule,
+    MatCheckboxModule,
     MatInputModule,
     MatCardModule,
     MatSelectModule,

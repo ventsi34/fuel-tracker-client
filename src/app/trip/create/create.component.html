@@ -20,28 +20,41 @@
             <mat-option value="petrol">Petrol</mat-option>
           </mat-select>
         </mat-form-field>
-
+        <mat-label>Drive place</mat-label>
+        <section class="radio-wrapper">
+          <mat-checkbox class="radio-option">City</mat-checkbox>
+          <mat-checkbox class="radio-option">Highway</mat-checkbox>
+          <mat-checkbox class="radio-option">Mountain</mat-checkbox>
+        </section>
         <mat-form-field appearance="outline" class="w100">
-          <mat-label>Drive place</mat-label>
-          <mat-radio-group
-            aria-labelledby="place">
-            <mat-radio-button value="city">City</mat-radio-button>
-            <mat-radio-button value="Highway">Highway</mat-radio-button>
-          </mat-radio-group>
+          <mat-label>Drive type</mat-label>
+          <mat-select>
+            <mat-option value="slow">Slow</mat-option>
+            <mat-option value="normal">Normal</mat-option>
+            <mat-option value="fast">Fast</mat-option>
+          </mat-select>
         </mat-form-field>
-
-
-
-        <!-- drivePlace: {
-        },
-        driveType: {
-        },
-        season: {
-        },
-        airConditionerStatus: {
-        },
-        isPremiumFuel: {
-        }, -->
+        <mat-form-field appearance="outline" class="w100">
+          <mat-label>Season</mat-label>
+          <mat-select>
+            <mat-option value="winter">Winter</mat-option>
+            <mat-option value="summer">Summer</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w100">
+          <mat-label>Air conditioner</mat-label>
+          <mat-select>
+            <mat-option value="on">On</mat-option>
+            <mat-option value="off">Off</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w100">
+          <mat-label>Is premium fuel</mat-label>
+          <mat-select>
+            <mat-option value="yes">Yes</mat-option>
+            <mat-option value="no">No</mat-option>
+          </mat-select>
+        </mat-form-field>
       </mat-card-content>
       <mat-card-actions class="text-center">
         <button mat-raised-button color="primary" class="w100">Add trip</button>
